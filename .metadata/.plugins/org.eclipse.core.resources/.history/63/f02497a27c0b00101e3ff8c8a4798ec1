@@ -1,0 +1,20 @@
+
+public class Week4Project {
+
+	public static void main(String[] args) {
+		int[] ages = {3, 9, 23, 64, 2, 8 ,28, 93}; 
+		// this defines an int array named ages, and initializes it.
+		
+		int result = ages[ages.length - 1] - ages[0];
+		System.out.println("Result: " + result); 
+		// ages.length -1 gets the index of the last element in the array.
+		// ages[0] refers to first element in the array.
+		
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 15};
+		// new integer array ages2 with 9 elements.
+		
+		int result1 = ages2[ages2.length - 1] - ages2[0];
+		System.out.println("Result: " + result1);
+	}
+
+}

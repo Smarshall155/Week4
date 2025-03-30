@@ -1,0 +1,12 @@
+package week01;
+
+public class Quiz {
+
+	public static void main(String[] args) {
+	String firstName = "Tom";
+	String lastName = "Sawyer";
+	System.out.println(firstName + "lastName");
+
+	}
+
+}

@@ -1,0 +1,79 @@
+
+public class Week4Project {
+
+	public static void main(String[] args) {
+		int[] ages = {3, 9, 23, 64, 2, 8 ,28, 93}; 
+		// this defines an int array named ages, and initializes it.
+		
+		int result = ages[ages.length - 1] - ages[0];
+		System.out.println(result); 
+		// ages.length -1 gets the index of the last element in the 			 		   array.
+		// ages[0] refers to first element in the array.
+		
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 28, 93, 15};
+		int result2 = ages2[ages2.length - 1] - ages2[0];
+		System.out.println(result2);
+		// ages2.length -1 gets the index of the last element in the 		 		   array.
+		// ages2[0] entry for the first element of the array.
+		
+		int[] agesShort = {10, 20, 30, 40, 50, 60};
+		int resultShort = agesShort[agesShort.length - 1] - 	 		agesShort[0];
+		System.out.println(resultShort);
+		// array agesShort with 6 elements.
+		
+		int[] agesSmall = {100, 200, 300, 400};
+		int resultSmall = agesSmall[agesSmall.length - 1] - 	 		agesSmall[0];
+		System.out.println(resultSmall);
+		// array agesSmall with 4 elements.
+		
+		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", 	 						 						  "Bob"};
+		// a string array named names, and initializes it with the 	 			 		   named values.
+		int totalLetters = 0;
+		for (String name : names) {
+            totalLetters += name.length();
+		}
+            double averageLetters = (double) totalLetters / 	 		 			names.length;
+    		System.out.println(averageLetters);
+    		//totalLetters variable is used to show total number of   				 			  letters across all names.
+    		//for loop, you can access each name using names array. 			 			  name.length() gives length for each name.
+    		// average is calculated by dividing totalLetters by total 			   number of names.
+    		//using double because of decimal.
+
+    		String concatenatedNames = "";
+    		for (String name : names) {
+    			concatenatedNames += name + " ";
+    		}
+    		System.out.println(concatenatedNames);
+    		// use concatenatedNames to hold the result.
+    		// add each name to the concatenatedNames string using (name + " ")
+    		// .trim() removes extra spaces at the end of the string.
+    		
+    		//Q3. using (array.length - 1) the property gives the total number of elements in the array. Subtracting 1 gives the index of the last element.
+    		//Q4. array(0) first element in an array is always index 0.
+    		
+    		int[] nameLengths = new int[names.length];
+    		for (int i = 0; i < names.length; i++) {
+    			nameLengths[i] = names[i].length();
+    		}
+    		System.out.print("Name lengths: ");
+    	    for (int length : nameLengths) {
+    	    System.out.print(length + " ");
+    	    }
+    	    // array nameLengths is created with the same size names, using (new int [names.length].
+    	    // for loop runs from 0 to names.length - 1. for each name, the length is added to the appropriate index in nameLengths array.
+    	    String repeatedWord = repeatWord("Hello", 3);
+			  System.out.println(repeatedWord);
+    	    
+    	    } // end of main ***********************************
+    	     static String repeatWord(String word, int n) {
+    		  StringBuilder result = new StringBuilder();
+    		  for(int i = 0; i  < n; i++) {
+    			  result.append(word);
+    			  
+    		  }
+    			  return result.toString();
+    		  }
+	
+} // end of class 	    
+    
+

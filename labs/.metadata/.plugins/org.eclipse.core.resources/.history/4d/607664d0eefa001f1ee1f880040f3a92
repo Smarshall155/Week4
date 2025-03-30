@@ -1,0 +1,11 @@
+package week01;
+
+public class ConditionsAndLoops {
+
+	public static void main(String[] args) {
+		// == equality operator
+		System.out.println(2 == 2);
+
+	}
+
+}

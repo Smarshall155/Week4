@@ -1,0 +1,12 @@
+
+public class Week4Project {
+
+	public static void main(String[] args) {
+		int[] ages = {3, 9, 23, 64, 2, 8 ,28, 93}; 
+		// this defines an int array named ages, and initializes it.
+		int result = ages[ages.length - 1] - ages[0];
+		System.out.println("Result: " + result); 
+		
+	}
+
+}
